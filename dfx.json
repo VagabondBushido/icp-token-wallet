@@ -1,19 +1,9 @@
 {
   "canisters": {
-    "icp_token_wallet_backend": {
-      "candid": "src/icp_token_wallet_backend/icp_token_wallet_backend.did",
-      "package": "icp_token_wallet_backend",
+    "icp_token_wallet": {
+      "candid": "src/icp_token_wallet/icp_token_wallet.did",
+      "package": "icp_token_wallet",
       "type": "rust"
-    },
-    "icp_token_wallet_frontend": {
-      "dependencies": [
-        "icp_token_wallet_backend"
-      ],
-      "source": [
-        "src/icp_token_wallet_frontend/dist"
-      ],
-      "type": "assets",
-      "workspace": "icp_token_wallet_frontend"
     }
   },
   "defaults": {
@@ -22,6 +12,5 @@
       "packtool": ""
     }
   },
-  "output_env_file": ".env",
   "version": 1
 }

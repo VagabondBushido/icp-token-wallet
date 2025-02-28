@@ -1,0 +1,9 @@
+service : {
+  "balance_of": (principal) -> (nat64) query;
+  "total_supply": () -> (nat64) query;
+  "transfer": (principal, nat64) -> (variant { Ok; Err: text });
+  "mint": (principal, nat64) -> (variant { Ok; Err: text });
+  "burn": (nat64) -> (variant { Ok; Err: text });
+  "get_owner": () -> (principal) query;
+  "list_accounts": () -> (vec record { principal; nat64 }) query;
+}
